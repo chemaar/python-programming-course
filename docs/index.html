@@ -1,9 +1,573 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-	<title>Python programming course</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Python Programming Resources</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 1em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+img{
+margin-bottom: 1em;
+}
+
+span > a {
+  display: inline-block;
+}
+
+
+
+</style>
+
 </head>
 
 <body>
-	<h1>Python programming course</h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Coding</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#programming_resources">Hands on Programming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#python_modules">Python modules (Spanish)</a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="#publications">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container-fluid">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-5">Hands on Programming with Python</h1>
+	  <p style="text-align: center">
+	    <img src="imgs/watermark.png" alt="Programming with Python" style="padding-top: 1em; width:85%;height:350px;">
+	  </p>
+      <p class="lead">A core digital skill.</p>
+	  
+      <a href="#programming_resources" class="btn btn-primary btn-lg">Start now!</a>
+    </header>
+	
+   <h1 class="p-3 mb-2 bg-secondary text-white rounded"><a name="programming_resources">Hands on Programming</a></h1>
+   <div class="row text-center">
+   
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/intro.png" alt="Introduction" style="padding-top: 2em; width:350px;height:230px;">
+				  <h2>Introduction</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Introduction</h2> 
+				  <p>Basic computer architecture</p> 
+				  <p>Programming and algorithms</p>
+				  <p>Programming languages</p>
+				  <p>Information encoding</p>
+				  <p>The Python programming language</p>
+				  <p>
+				   <span>
+					   <a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/1_Introduction_to_programming.ipynb" class="icon-link icon-primary" title="Theory notebook">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+	
+	
+	<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/programming_elements.png" alt="Programming elements" style="padding-top: 2em; width:230px;height:230px;">
+				  <h2>Programming elements</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Programming elements</h2> 
+				  <p>Identifiers</p> 
+				  <p>Constants &amp;  Variables</p>
+				  <p>Datatypes</p>
+				  <p>Statements</p>
+				  <p>Expressions &amp; operators</p>
+				  <p>
+				   <span>
+					   <a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/2_Programming_elements.ipynb" class="icon-link icon-primary" title="Theory notebook">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_2_Programming_elements.ipynb" class="icon-link icon-primary" title="Practice notebook">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_2_Programming_elements_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/control_flow.png" alt="Control flow" style="padding-top: 2em; width:230px;height:230px;">
+				  <h2>Control flow</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Control flow</h2> 
+				  <p>Conditional statements</p> 
+				   				
+				  <p>Loops</p>
+				  
+				  <p>Other control flow statements: break &amp; continue</p>
+				  <p>
+				   <span>
+					   <a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/3_Control_Flow_Conditional_Statements.ipynb" class="icon-link icon-primary" title="Theory notebook-Conditional statements">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					 <span>
+					   <a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/4_Control_Flow_Loop_Statements.ipynb" class="icon-link icon-primary" title="Theory notebook-Loop statements">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_3_Control_Flow_Conditional_Statements.ipynb" class="icon-link icon-primary" title="Practice notebook-Conditional statements">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_4_Control_Flow_Loops.ipynb" class="icon-link icon-primary" title="Practice notebook-Loop statements">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_3_Control_Flow_Conditional_Statements_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook-Conditional statements">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_4_Control_Flow_Loops_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook-Loop statements">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+	
+	</div><!--Row-1-->
+	
+	<div class="row text-center">
+   
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/data_structures.png" alt="Data Structures" style="padding-top: 2em; width:300px;height:200px;">
+				  <h2>Data structures</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Data structures</h2> 
+				  <p>Strings</p> 
+				  <p>Lists</p>
+				  <p>Tuples</p>
+				  <p>Sets</p>
+				  <p>Dictionaries</p>
+				  <p>
+				   <span>
+					   <a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/5_Datastructures_Lists_and_Strings.ipynb" class="icon-link icon-primary" title="Theory notebook">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_5_Data_Structures_Lists_Strings.ipynb" class="icon-link icon-primary" title="Practice notebook-Lists and Strings">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_5b_Data_Structures_Tuples_Sets_Dictionaries.ipynb" class="icon-link icon-primary" title="Practice notebook-Tuples, Sets and Dictionaries">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_5_Data_Structures_Lists_Strings_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook-Lists and Strings">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_5b_Data_Structures_Tuples_Sets_Dictionaries_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook-Tuples, Sets and Dictionaries">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+	
+	
+	<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/functions.png" alt="Subprograms" style="padding-top: 2em; width:230px;height:230px;">
+				  <h2>Subprograms</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Subprograms</h2> 
+				  <p>Functions</p> 
+				  <p>Object methods</p>
+				  <p>High-order functions</p>
+				  <p>Lambda functions</p>
+				  
+	
+				  <p>
+				   <span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_6_Functions.ipynb" class="icon-link icon-primary" title="Practice notebook-Functions">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_6_Functions_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/objects.png" alt="Object-Oriented Programming" style="padding-top: 2em; width:300px;height:200px;">
+				  <h2>Objects</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Object-Oriented Programming</h2> 
+				  <p>Objects &amp; classes</p> 
+				  <p>OOP principles</p>
+				  <p>SOLID principles</p>
+				  <p>Methods &amp; attributes</p>
+				  <p>
+				 	
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_6b_Objects.ipynb" class="icon-link icon-primary" title="Practice notebook">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_6b_Objects_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook-Loop statements">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+	
+	</div><!--End row 2-->
+
+
+	<div class="row text-center">
+   
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/searching.png" alt="Searching and sorting" style="padding-top: 2em; width:250px;height:230px;">
+				  <h2>Searching &amp; Sorting</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Searching &amp; Sorting</h2> 
+				  <p>Linear search</p> 
+				  <p>Binary search</p>
+				  <p>Bubble sort</p>
+				  <p>Insertion sort</p>
+				  <p>Selection sort</p>
+				  <p>
+				   <span>
+					   <a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/6-Basic%20algorithms_%20Searching%20and%20Sorting.ipynb" class="icon-link icon-primary" title="Theory notebook">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_7_Searching_Sorting.ipynb" class="icon-link icon-primary" title="Practice notebook">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_7_Searching_Sorting_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+	
+	
+	<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/resource.png" alt="Resource Management" style="padding-top: 2em; width:230px;height:230px;">
+				  <h2>Resource management</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Resource management</h2> 
+				  <p>Processes</p> 
+				  <p>Memory</p>
+				 
+	
+				  <p>
+				   <span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/7_Resource__Management.ipynb" class="icon-link icon-primary" title="Practice notebook">
+							<i class="fa fa-book" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					<span>
+					
+					</p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/input.png" alt="Input/Output" style="padding-top: 2em; width:230px;height:230px;">
+				  <h2>Input/Output</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Input/Output</h2> 
+				  <p>File management</p>
+				  <p>Text files</p> 
+				  <p>Binary files</p>
+				  <p>
+				 	
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/Lab_9_Input_Output_Files.ipynb" class="icon-link icon-primary" title="Practice notebook">
+							<i class="fa fa-cog" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					
+					<span>
+						<a href="https://github.com/chemaar/python-programming-course/blob/master/intro-programming/student-version/Lab_9_Input_Output_Files_STUDENT.ipynb" class="icon-link icon-primary" title="Student notebook">
+							<i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+						</a>
+					</span>
+					
+					
+				  </p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+	
+	</div><!--End row 3-->
+	
+	
+	
+	<div class="row text-center">
+   
+		<div class="col-sm-4">
+			<div class="flip-card">
+			  <div class="flip-card-inner">
+				<div class="flip-card-front">
+				  <img src="imgs/error.png" alt="Error handling" style="padding-top: 2em; width:230px;height:200px;">
+				  <h2>Error handling &amp; Testing</h2> 
+				</div>
+				<div class="flip-card-back">
+				  <h2>Error handling &amp; Testing</h2> 
+				  <p>Testing techniques</p>
+				  <p>Unit testing</p> 
+				  <p>Exceptions</p>
+				  <p>Debugging</p>
+				  <mark>Not yet as a Jupyter notebook</mark>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+	
+	</div><!--End row 4-->
+	
+	<h1 class="p-3 mb-2 bg-secondary text-white rounded"><a name="python_modules">Python modules (Spanish)</a></h1>
+		<p>Find out more at <a href="https://github.com/chemaar/python-programming-course">Github</a></p>
+	<h1 class="p-3 mb-2 bg-secondary text-white rounded"><a name="publications">Publications</a></h1>
+	<h1 class="p-3 mb-2 bg-secondary text-white rounded"><a name="contact">Contact</a></h1>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="row">
+
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase text-light mb-4">Location</h4>
+          <p class="lead mb-0 text-light">Carlos III University of Madrid
+            <br>Avd. de la Universidad, 30, 28911, Leganés, Madrid, Spain</p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase text-light mb-4">Around the Web</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="http://www.josemalvarez.es/web/">
+            <i class="fas fa-comments"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/chema_ar">
+            <i class="fab fa-fw fa-twitter"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/josemalvarez/">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+          </a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/chemaar">
+            <i class="fab fa-fw fa-github"></i>
+          </a>
+        </div>
+
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <h4 class="text-uppercase text-light mb-4">About Python Programming</h4>
+          <p class="lead text-light mb-0">These resources have been created in the context of the academic activities within the UC3M.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+	<section class="copyright py-4 text-center">
+		<div class="container">
+		  
+		  <small>Copyright &copy; Jose María Alvarez Rodríguez 2020.</small>
+		</div>
+  </section>
+  
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
